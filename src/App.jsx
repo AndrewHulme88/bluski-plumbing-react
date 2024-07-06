@@ -3,6 +3,8 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import BluskiLogo from './components/bluskiLogo'
 import MyNavbar from './components/myNavbar'
+import MyFooter from './components/myFooter'
+import BulletServices from './components/bulletServices';
 
 function App() {
 
@@ -15,15 +17,10 @@ function App() {
         <BluskiLogo />
       </div>
       <div className="bullet-services">
-        <ul>
-          <li>Maintenance & Repairs</li>
-          <li>Roofing Repairs & Leaks</li>
-          <li>Hot & Cold Services</li>
-          <li>Blocked/Burst Pipes</li>
-          <li>Bathroom & Kitchen Renos</li>
-          <li>Gas Fitting</li>
-          <li>And More!!</li>
-        </ul>
+        <BulletServices />
+      </div>
+      <div className="bottom-footer">
+        <MyFooter />
       </div>
     </>
   )

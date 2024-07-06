@@ -5,7 +5,7 @@
 }
 
 .top-header {
-  text-align: left !important;
+
 }
 
 h1 {
@@ -23,4 +23,8 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   text-align: left;
+}
+
+.bottom-footer {
+  bottom: 0;
 }
