@@ -22,7 +22,12 @@ body {
   color: rgb(170, 170, 170);
   text-transform: uppercase;
   font-weight: bold;
-  text-align: left;
+  text-align: center;
+}
+
+.bullet-services ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 .bottom-footer {
@@ -30,4 +35,9 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
+}
+
+.showcase img {
+  width: 200px;
+  height: 200px;
 }
