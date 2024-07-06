@@ -2,6 +2,7 @@ import React from 'react'
 import { Container, Row, Col, Stack, Image, Nav, NavLink } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 function MyFooter() {
   return (
@@ -24,6 +25,7 @@ function MyFooter() {
           <Col>
             <h3>Contact Us!</h3>
             <p><FontAwesomeIcon icon={faPhone} /> 0422313727</p>
+            <a href="https://www.instagram.com/bluski_plumbing/"><FontAwesomeIcon icon={faInstagram} /></a>
           </Col>
         </Row>
       </Container>

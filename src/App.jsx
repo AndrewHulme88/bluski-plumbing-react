@@ -5,6 +5,7 @@ import BluskiLogo from './components/bluskiLogo'
 import MyNavbar from './components/myNavbar'
 import MyFooter from './components/myFooter'
 import BulletServices from './components/bulletServices';
+import Showcase from './components/showcase';
 
 function App() {
 
@@ -18,6 +19,9 @@ function App() {
       </div>
       <div className="bullet-services">
         <BulletServices />
+      </div>
+      <div className="showcase">
+        <Showcase />
       </div>
       <div className="bottom-footer">
         <MyFooter />
