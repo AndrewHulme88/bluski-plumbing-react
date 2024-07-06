@@ -1,14 +1,26 @@
 #root {
   margin: 0 auto;
-  padding: 2rem;
+
   text-align: center;
-  background-color: black;
+}
+
+.top-header {
+  text-align: left !important;
 }
 
 h1 {
-  color: #0092d4;
+  color: #0092d4 !important;
 }
 
 body {
-  background-color: black;
+  background-color: black !important;
+  margin: 0;
+  padding: 0;
+}
+
+.bullet-services {
+  color: rgb(170, 170, 170);
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: left;
 }
