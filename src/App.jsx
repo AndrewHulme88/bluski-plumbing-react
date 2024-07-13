@@ -5,6 +5,7 @@ import MyNavbar from './components/myNavbar'
 import MyFooter from './components/myFooter'
 import Showcase from './components/showcase';
 import HomePage from './components/homePage';
+import FooterBootstrap from './components/footerBootstrap';
 
 function App() {
 
@@ -22,7 +23,7 @@ function App() {
 
       </div>
       <div className="bottom-footer">
-        <MyFooter />
+        <FooterBootstrap />
       </div>
     </Router>
   )
