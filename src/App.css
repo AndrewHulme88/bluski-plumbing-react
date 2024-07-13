@@ -47,3 +47,7 @@ html, body {
 .mt-0 {
   margin-top: 0 !important;
 }
+
+.white {
+  color: white;
+}
