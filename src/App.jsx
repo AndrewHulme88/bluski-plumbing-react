@@ -14,12 +14,12 @@ function App() {
         <MyNavbar />
       </div>
 
-      <div className="showcase">
+      <div className="routes">
         <Routes>
           <Route path='/' element={<HomePage />} />
+          <Route path='/showcase' element={<Showcase />} />
         </Routes>
 
-        <Showcase />
       </div>
       <div className="bottom-footer">
         <MyFooter />
