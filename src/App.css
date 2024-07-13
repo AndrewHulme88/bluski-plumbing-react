@@ -3,16 +3,19 @@
   flex-direction: column;
   margin: 0 auto;
   text-align: center;
+  min-height: 100vh;
 }
 
 h1 {
+
   color: #0092d4 !important;
 }
 
-body {
+html, body {
   background-color: black !important;
   height: 100%;
   margin: 0;
+  margin-top: 5%;
   padding: 0;
 }
 
@@ -38,4 +41,9 @@ body {
 .showcase img {
   width: 200px;
   height: 200px;
+  margin: 1%;
+}
+
+.mt-0 {
+  margin-top: 0 !important;
 }

@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import MyNavbar from './components/myNavbar'
-import MyFooter from './components/myFooter'
 import Showcase from './components/showcase';
 import HomePage from './components/homePage';
 import FooterBootstrap from './components/footerBootstrap';
