@@ -23,7 +23,7 @@ export default function FooterBootstrap() {
             <MDBCol md="4" lg="3" xl="3" className='mx-auto mb-md-0 mb-4'>
               <h6 className='text-uppercase fw-bold mb-3'>Contact</h6>
               <p>
-                <MDBIcon icon="home" className="me-2" />
+                <MDBIcon icon="home" className="me-3" />
                 Parkdale VIC 3193, Australia
               </p>
               <p>

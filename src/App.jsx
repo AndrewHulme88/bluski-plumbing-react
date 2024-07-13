@@ -6,6 +6,7 @@ import MyNavbar from './components/myNavbar'
 import Showcase from './components/showcase';
 import HomePage from './components/homePage';
 import FooterBootstrap from './components/footerBootstrap';
+import Credentials from './components/credentials';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/showcase' element={<Showcase />} />
+          <Route path='/credentials' element={<Credentials />} />
         </Routes>
 
       </div>
