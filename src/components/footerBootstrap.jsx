@@ -6,7 +6,7 @@ import '../App.css';
 export default function FooterBootstrap() {
   return (
     <MDBFooter bgColor='dark' className='text-center text-lg-start text-light'>
-      <section className='d-flex justify-content-center justify-content-lg-between p-1 mt-0 border-top'>
+      <section className='d-flex justify-content-center justify-content-lg-between p-1 mt-0'>
         <MDBContainer className='text-center text-md-start mt-1'>
           <MDBRow className='mt-3'>
             <MDBCol md="4" lg="3" xl="3" className='mx-auto mb-md-0 mb-4'>
@@ -30,20 +30,17 @@ export default function FooterBootstrap() {
         </MDBContainer>
       </section>
 
-      <section className='d-flex justify-content-center justify-content-lg-between p-3 border-top'>
+      <section className='d-flex justify-content-center p-3 border-top'>
         <div className='me-5 d-none d-lg-block'>
           <span>Get connected with us on social networks:</span>
         </div>
 
         <div>
-          <a href='' className='me-4 text-reset'>
-            <MDBIcon fab icon="facebook-f" />
+          <a href='https://www.instagram.com/bluski_plumbing/' className='me-4 text-reset'>
+            <MDBIcon className='social-icon' fab icon="instagram" />
           </a>
-          <a href='' className='me-4 text-reset'>
-            <MDBIcon fab icon="google" />
-          </a>
-          <a href='' className='me-4 text-reset'>
-            <MDBIcon fab icon="instagram" />
+          <a href='https://www.google.com/search?q=bluski+plumbing&oq=&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIGCAAQRRg5MgYIARBFGDsyDAgCEC4YJxiABBiKBTIMCAMQABhDGIAEGIoFMgwIBBAAGEMYgAQYigUyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQgyNDEwajBqN6gCALACAA&sourceid=chrome&ie=UTF-8' className='me-4 text-reset'>
+            <MDBIcon className='social-icon' fab icon="google" />
           </a>
         </div>
       </section>

@@ -50,3 +50,12 @@ html, body {
 .white {
   color: white;
 }
+
+.social-icon {
+  font-size: larger;
+  transition: all 0.2s ease-in-out;
+}
+.social-icon:hover {
+  transform: scale(1.5);
+  color: #0092d4;
+}
