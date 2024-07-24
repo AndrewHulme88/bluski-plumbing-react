@@ -19,6 +19,12 @@ html, body {
   padding: 0;
 }
 
+#content {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .bullet-services {
   color: rgb(170, 170, 170);
   text-transform: uppercase;

@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import './App.css'
+import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import MyNavbar from './components/myNavbar'
@@ -11,7 +11,7 @@ import Credentials from './components/credentials';
 function App() {
 
   return (
-    <Router>
+    <Router id="content">
       <div className="top-header">
         <MyNavbar />
       </div>
