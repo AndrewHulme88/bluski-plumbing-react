@@ -1,4 +1,5 @@
 import React from 'react'
+import MyCarousel from './myCarousel';
 
 function Showcase() {
   return (
@@ -6,6 +7,7 @@ function Showcase() {
       <div className="showcase-heading">
         <h1>Our Work</h1>
       </div>
+      <MyCarousel />
       <div className="showcase">
         <img src="src/assets/images/Screenshot 2024-03-04 171201.png" alt="" />
         <img src="src/assets/images/Screenshot 2024-03-04 171216.png" alt="" />
