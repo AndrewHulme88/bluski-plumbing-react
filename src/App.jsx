@@ -11,18 +11,19 @@ import Credentials from './components/credentials';
 function App() {
 
   return (
-    <Router id="content">
-      <div className="top-header">
-        <MyNavbar />
-      </div>
+    <Router>
+      <div id="root">
+        <div className="top-header">
+          <MyNavbar />
+        </div>
 
-      <div className="routes">
-        <Routes>
-          <Route path='/' element={<HomePage />} />
-          <Route path='/showcase' element={<Showcase />} />
-          <Route path='/credentials' element={<Credentials />} />
-        </Routes>
-
+        <div className="routes">
+          <Routes>
+            <Route path='/' element={<HomePage />} />
+            <Route path='/showcase' element={<Showcase />} />
+            <Route path='/credentials' element={<Credentials />} />
+          </Routes>
+        </div>
       </div>
       <div className="bottom-footer">
         <FooterBootstrap />

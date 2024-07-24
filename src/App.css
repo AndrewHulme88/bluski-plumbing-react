@@ -7,7 +7,6 @@
 }
 
 h1 {
-
   color: #0092d4 !important;
 }
 
@@ -17,12 +16,6 @@ html, body {
   margin: 0;
   margin-top: 5%;
   padding: 0;
-}
-
-#content {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
 }
 
 .bullet-services {
@@ -38,7 +31,7 @@ html, body {
 }
 
 .bottom-footer {
-  position: absolute;
+  position: sticky;
   bottom: 0;
   left: 0;
   width: 100vw;
