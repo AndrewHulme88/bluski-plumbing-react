@@ -1,0 +1,28 @@
+.small-image {
+  width: 50%; /* Adjust the width as needed */
+  height: auto;
+  object-fit: cover;
+  margin: 5px; /* Optional spacing between thumbnails */
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.carousel-indicator {
+  border: none;
+  background: transparent;
+  margin: 0 5px;
+  padding: 0;
+}
+
+.carousel-indicator img {
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.carousel-indicator.active img {
+  border-color: #007bff; /* Highlight color for the active thumbnail */
+}
