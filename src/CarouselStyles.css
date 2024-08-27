@@ -1,14 +1,8 @@
 .small-image {
-  width: 50%; /* Adjust the width as needed */
+  width: 50%;
   height: auto;
   object-fit: cover;
-  margin: 5px; /* Optional spacing between thumbnails */
-}
-
-.carousel-indicators {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
+  margin: 5px;
 }
 
 .carousel-indicator {
@@ -24,5 +18,20 @@
 }
 
 .carousel-indicator.active img {
-  border-color: #007bff; /* Highlight color for the active thumbnail */
+  border-color: #007bff;
+}
+.carousel-indicators {
+  position: relative;
+  margin-top: 0; /* Adjust this value based on your layout needs */
+}
+
+/* Ensure only the active item is visible */
+.carousel-item {
+  display: none;
+}
+
+.carousel-item.active {
+  width: 50vw;
+  height: 50vh;
+  display: block;
 }

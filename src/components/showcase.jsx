@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import '../CarouselStyles.css'; // Import the CSS file
+import '../CarouselStyles.css';
 
 const images = [
   'src/assets/images/Screenshot 2024-03-04 171201.png',
@@ -25,10 +25,19 @@ function Showcase() {
       <div className="showcase-heading">
         <h1>Our Work</h1>
       </div>
-      <Carousel activeIndex={activeIndex} onSelect={handleSelect}>
+      <Carousel
+        activeIndex={activeIndex}
+        onSelect={handleSelect}
+        indicators={false} // We'll use custom indicators
+        interval={null} // If you want the carousel not to slide automatically
+      >
         {images.map((img, index) => (
           <Carousel.Item key={index}>
-            <img src={img} alt={`Image ${index + 1}`} />
+            <img
+              className="d-block w-100"
+              src={img}
+              alt={`Image ${index + 1}`}
+            />
             <Carousel.Caption>
               <h3>Image {index + 1} caption</h3>
             </Carousel.Caption>
