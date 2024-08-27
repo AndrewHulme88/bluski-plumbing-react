@@ -22,43 +22,46 @@ function Showcase() {
 
   return (
     <>
-      <div className="showcase-heading">
-        <h1>Our Work</h1>
-      </div>
-      <Carousel
-        activeIndex={activeIndex}
-        onSelect={handleSelect}
-        indicators={false} // We'll use custom indicators
-        interval={null} // If you want the carousel not to slide automatically
-      >
-        {images.map((img, index) => (
-          <Carousel.Item key={index}>
-            <img
-              className="d-block w-100"
-              src={img}
-              alt={`Image ${index + 1}`}
-            />
-            <Carousel.Caption>
-              <h3>Image {index + 1} caption</h3>
-            </Carousel.Caption>
-          </Carousel.Item>
-        ))}
-      </Carousel>
-      <div className="carousel-indicators">
-        {images.map((img, index) => (
-          <button
-            key={index}
-            type="button"
-            onClick={() => handleSelect(index)}
-            className={`carousel-indicator ${index === activeIndex ? 'active' : ''}`}
+      <div className="showcase-container">
+        <div className="showcase-heading">
+          <h1>Our Work</h1>
+        </div>
+        <div className="carousel-container">
+          <Carousel
+            activeIndex={activeIndex}
+            onSelect={handleSelect}
+            indicators={false} // We'll use custom indicators
+            interval={null} // If you want the carousel not to slide automatically
+            wrap={true}
           >
-            <img
-              src={img}
-              alt={`Image ${index + 1}`}
-              className="small-image"
-            />
-          </button>
-        ))}
+            {images.map((img, index) => (
+              <Carousel.Item key={index}>
+                <img
+                  className="d-block w-100"
+                  src={img}
+                  alt={`Image ${index + 1}`}
+                />
+
+              </Carousel.Item>
+            ))}
+          </Carousel>
+        </div>
+        <div className="carousel-indicators">
+          {images.map((img, index) => (
+            <button
+              key={index}
+              type="button"
+              onClick={() => handleSelect(index)}
+              className={`carousel-indicator ${index === activeIndex ? 'active' : ''}`}
+            >
+              <img
+                src={img}
+                alt={`Image ${index + 1}`}
+                className="small-image"
+              />
+            </button>
+          ))}
+        </div>
       </div>
     </>
   );
